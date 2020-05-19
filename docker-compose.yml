@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+    nginx:
+        image: nginx:1.16
+        container_name: nginx
+        restart: always
+        ports: 
+            - '80:80'
+            - '443:443'
+        volumes: 
+            - ./config/nginx.conf:/etc/nginx/nginx.conf
+            - dist:/var/www/vue-boilerplate/dist/
+    vue-boilerplate:
+        build: './'
+        container_name: vue-boilerplate
+        links:
+            - 'nginx'
+        depends_on:
+            - nginx
+        volumes:
+            - dist:/vue-boilerplate/dist/
+volumes:
+    dist:

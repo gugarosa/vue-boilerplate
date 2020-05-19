@@ -1,0 +1,4 @@
+# Ignoring current 'node_modules' and 'dist' folder to
+# prevent container from loading problematic files
+**/node_modules
+**/dist

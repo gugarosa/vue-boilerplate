@@ -1,0 +1,22 @@
+@import './components/badge';
+@import './components/button';
+@import './components/dropdown';
+@import './components/fa';
+@import './components/hr';
+@import './components/input';
+@import './components/notification';
+@import './components/pagination';
+@import './components/swal';
+@import './components/table';
+@import './components/text';
+@import './components/tooltip';
+
+html,
+body {
+    font-family: $font-family;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

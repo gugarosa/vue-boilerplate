@@ -1,0 +1,53 @@
+#alert-center, #message-center {
+    button {
+        all: unset;
+    }
+}
+
+.dropdown-divider {
+    margin: 0;
+}
+
+
+.dropdown-header {
+    background-color: $bg-sidebar-color;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+    color: $white-color;
+    cursor: default;
+    font-size: $font-size * 0.65;
+    font-weight: $font-weight + 200;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.dropdown-item {
+    transition: $transition;
+    &:active {
+        background-color: lighten($bg-sidebar-color, 47.5%);
+        color: inherit;
+    }
+}
+
+.dropdown-menu {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+    padding: 0;
+    top: 0px !important;
+    width: 12.5rem;
+}
+
+@media screen and (max-width: $view-xxs) {
+    .dropdown {
+        position: static;
+    }
+    
+    .dropdown-menu.show {
+        transform: none !important;
+    }
+    
+    .dropdown-menu {
+        left: 0.75rem !important;
+        top: 60px !important;
+        width: calc(100% - 1.5rem);
+    }
+}

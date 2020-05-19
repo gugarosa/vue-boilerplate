@@ -1,0 +1,58 @@
+@import '../mixins/button';
+
+.btn {
+    font-size: $font-size * 0.8;
+    font-weight: $font-weight + 200;
+    padding: 0.5rem 1.2rem;
+    text-transform: uppercase;
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+}
+
+.btn-primary {
+    @include button-variant(#ffffff, $primary-color, $primary-color);
+}
+
+.btn-secondary {
+    @include button-variant(#ffffff, $bg-sidebar-color, $bg-sidebar-color);
+}
+
+.btn-info {
+    @include button-variant(#ffffff, $info-color, $info-color);
+}
+
+.btn-success {
+    @include button-variant(#ffffff, $success-color, $success-color);
+}
+
+.btn-warning {
+    @include button-variant(#ffffff, $warning-color, $warning-color);
+}
+
+.btn-danger {
+    @include button-variant(#ffffff, $danger-color, $danger-color);
+}
+
+.btn-link {
+    background-color: transparent;
+    border-color: transparent;
+    color: $black-color;
+    transition: $transition;
+
+    &:hover {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        color: $secondary-color !important;
+        text-decoration: none;
+    }
+}
+
+.btn-link[aria-expanded="true"] {
+    color: $secondary-color !important;
+}
+
+.btn-lg {
+    font-size: $font-size;
+}

@@ -1,0 +1,37 @@
+.vue-notification {
+    .close {
+        color: #ffffff;
+        cursor: pointer;
+        transition: $transition;
+    }
+
+    &.default {
+        background: $primary-color;
+        border-left-color: darken($primary-color, 10%);
+    }
+
+    &.secondary {
+        background: $secondary-color;
+        border-left-color: darken($secondary-color, 10%);
+    }
+
+    &.info {
+        background: $info-color;
+        border-left-color: darken($info-color, 10%);
+    }
+
+    &.warning {
+        background: $warning-color;
+        border-left-color: darken($warning-color, 10%);
+    }
+
+    &.danger {
+        background: $danger-color;
+        border-left-color: darken($danger-color, 10%);
+    }
+
+    &.success {
+        background: $success-color;
+        border-left-color: darken($success-color, 10%);
+    }
+}

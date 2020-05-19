@@ -1,0 +1,39 @@
+.page-item.active {
+    .page-link {
+        background-color: $primary-color;
+        border-color: $main-color;
+    }
+}
+
+.page-item {
+    .page-link {
+        border: 1px solid #dee2e6;
+    }
+}
+
+.page-item+.page-item {
+    margin-left: 0.25rem;
+}
+
+.page-link {
+    border: none;
+    border-radius: $border-radius;
+    color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size * 0.85;
+    height: 2rem;
+    width: 2rem;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+@media screen and (max-width: $view-xs) {
+    .pagination {
+        justify-content: center;
+    }
+}

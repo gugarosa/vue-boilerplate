@@ -1,0 +1,37 @@
+/* Breakpoints */
+$view-xxs: 384px;
+$view-xs: 576px;
+$view-sm: 768px;
+$view-md: 992px;
+$view-lg: 1200px;
+
+/* Basic variables */
+$border-radius: 0.25rem;
+$font-family: 'Montserrat', sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+$opacity: 0.8;
+$transition: all .3s ease-in-out;
+
+/* Background colors */
+$bg-main-color: #f7f7f7;
+$bg-loading-color: rgba(0, 0, 0, 0.75);
+$bg-navbar-color: #ffffff;
+$bg-sidebar-color: #696969;
+
+/* Root colors */
+$main-color: #f5daa7 !default;
+
+$primary-color: darken($main-color, 30%);
+$secondary-color: #98714c;
+$info-color: #579ceb;
+$success-color: darken(#57eb57, 25%);
+$warning-color: #e99e12;
+$danger-color: #eb6157;
+$black-color: #212529;
+$white-color: #ffffff;
+
+/* Sidebar */
+$sidebar-size: 250px;
+$sidebar-size-collapse: 80px;
+$sidebar-transition-collapse: all 0.25s cubic-bezier(.23, .92, 0, .99);

@@ -1,0 +1,25 @@
+.table-hover {
+    thead {
+        tr {
+            th {
+                border-bottom: 2px solid $primary-color;
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+    }
+    tbody {
+        border-bottom: 2px solid $primary-color;
+        tr, tr:hover {
+            transition: $transition;
+        }
+    }
+}
+
+.table-primary, .table-primary > td, .table-primary:hover > td {
+    background-color: $main-color !important;
+}
+
+.table-primary td {
+    border-color: $primary-color;
+}
